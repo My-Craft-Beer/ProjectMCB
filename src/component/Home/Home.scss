@@ -1,0 +1,48 @@
+body {
+    background: #F3F3F3;
+}
+
+.logo {
+    margin-top: 6px;
+}
+
+.recommendTitle {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 67px;
+}
+
+.recommendContainer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        padding: 0;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.tableTitle {
+    background-color: #e0e0e0;
+    font-weight: 700;
+  }
+.tableContainer {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.banner {
+    margin-top: 40px;
+}
