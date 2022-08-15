@@ -7,6 +7,7 @@ import Home from './component/Home/Home';
 // import Map4 from './component/Map/Map4';
 import Map5 from './component/Map/Map5';
 import ModalContainer from './component/ModalMenu/Modalcontainer';
+import ServiceInfo from './component/ServiceInfo/ServiceInfo';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/MacVigation" element={<Map5/>} />
+          <Route exact path="/serviceInfo" element={<ServiceInfo/>} />
         </Routes>
       </Router>
     </div>
