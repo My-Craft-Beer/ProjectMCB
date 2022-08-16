@@ -1,14 +1,47 @@
 .bodyBack {
     width: 100vw;
     height: 100vh;
-    background-image: url(ServiceinfoBack.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-image: url(ServiceinfoBack.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
 
     .bodyContainer {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.534);
+        margin: 0 auto;
+
+        .fadeContainer {
+            background-image: url(ServiceinfoBack.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            .fadeContent {
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(255, 255, 255, 0.678);
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+
+                .linkbtn {
+                    width: 150px;
+                    height: 26px;
+                    border: 2px #000 solid;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                    font-weight: 600;
+                    &:active {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
     }
 }
