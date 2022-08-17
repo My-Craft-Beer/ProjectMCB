@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  input, button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F3F3;
+  }
+  
+  form {
+    display: block;
+    position: relative;
+  }
+  
+  /*로그인 입력창 css*/
+  form .form-inner .form-group {
+    display: flex;
+    width: 300px;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .form-inner .form-group label {
+    display: block;
+    color: black;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-right: 10px;
+    transition: 0.4s; /*마우스를 가져갔을 때 전환 발생*/
+  }
+  
+  /*라벨(ex. name, id, password) 색상, 굵기 변환*/
+  .form-inner .form-group:focus-within label {
+    font-weight: 700;
+  }
+  
+  /*아이디/비밀번호 찾기 페이지 연결 css*/
+  form .form-inner .sub-find-detail {
+    display: inline-block;
+    flex-direction: row;
+    margin-left: 45px;
+    font-size: 12px;
+  }
+  /*회원가입 페이지 연결 css*/
+  form .form-inner .sub-sign-in {
+    display: inline-block;
+    flex-direction: row;
+    margin-left: 25px;
+    font-size: 12px;
+  }
+  
+  /*로그인 버튼 css*/
+  form .form-inner .form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #F9E8B7;
+    border-radius: 8px;
+    transition: 0.4s; /*마우스를 가져갔을 때 전환 발생*/
+  }
+  
+  /*transition을 통해 설정한 애니메이션을 적용할 수 있음*/
+  form .form-inner .form-group:focus-within input{
+    box-sizing: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  form .form-inner input[type="submit"],
+  .welcome button {
+    display: block;
+    margin-left: 110px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #F8E2A5;
+    background-size: 200%;
+    background-position: 0%;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /*오류 메세지 css*/
+  .p {
+    font-size: 13px;
+    color: red;
+  }
+  /*오류메세지 css 적용 안됨...*/
+  
