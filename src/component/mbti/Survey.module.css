@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.backgruound-survey1,
+.backgruound-survey2,
+.backgruound-survey3,
+.backgruound-survey4,
+.backgruound-survey5,
+.backgruound-survey6 {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 844px;
+  margin: 0 auto;
+}
+
+.backgruound-survey1 {
+  background-image: url(../mbti/Survey1.jsx);
+}
+
+.backgruound-survey2 {
+  background-image: url(../../../public/kooImg/acid.svg);
+}
+
+.backgruound-survey3 {
+  background-image: url(../../../public/kooImg/taste.svg);
+}
+
+.backgruound-survey4 {
+  background-image: url(../../../public/kooImg/color.svg);
+}
+
+.backgruound-survey5 {
+  background-image: url(../../../public/kooImg/whatisbeer.svg);
+}
+
+.backgruound-survey6 {
+  background-image: url(../../../public/kooImg/snack.svg);
+}
+
+.backgruound-survey-name {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 20%;
+}
+
+.btn-survey1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 86%;
+  height: 57%;
+  margin: 0 auto;
+}
+
+.btn-survey-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 86%;
+  height: 48%;
+  margin: 0 auto;
+}
+
+.btn-survey1-each {
+  background-color: #fde466;
+  border: 0px;
+  border-radius: 10px;
+  height: 9.6vh;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.btn-survey1-each:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease;
+}
+
+.btn-survey1-each:active {
+  transform: scale(1.1);
+  transition: all 300ms ease;
+}
