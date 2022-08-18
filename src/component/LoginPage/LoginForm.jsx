@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 function LoginForm({ Login, error }) {
@@ -14,7 +15,7 @@ function LoginForm({ Login, error }) {
     <div>
       <form onSubmit={submitHandler}>
         <div className="form-inner">
-          <img src={require("../img/Logo.png")}></img>
+          <img src={require("./img/Logo.png")}></img>
 
           {error != "" ? <p>{error}</p> : ""}
 
@@ -44,7 +45,9 @@ function LoginForm({ Login, error }) {
             />
           </div>
           <div className="sub-find-detail">아이디/비밀번호 찾기</div>
-          <div className="sub-sign-in">회원가입</div>
+          <div className="sub-sign-in">
+            <Link to="/SignupForm">회원가입</Link>
+          </div>
           <input type="submit" value="LOGIN" />
         </div>
       </form>

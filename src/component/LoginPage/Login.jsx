@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LoginForm from "../components/LoginForm";
-import SignupForm from "../components/SignupForm";
+import { Link } from "react-router-dom";
+import LoginForm from "./LoginForm";
 
 function Login() {
   const programUser = {
@@ -45,7 +45,9 @@ function Login() {
       <div className="profile">
         {user.email != "" ? (
           //로그인 됐을 때
-          <div>홈페이지 연결</div>
+          <div>
+            <Link to="/">홈페이지 연결</Link>
+          </div>
         ) : (
           //로그인 실패했을 때
           <LoginForm Login={Login} error={error} />
