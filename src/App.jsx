@@ -10,6 +10,7 @@ import ModalContainer from "./component/ModalMenu/Modalcontainer";
 import ServiceInfo from "./component/ServiceInfo/ServiceInfo";
 import Login from "./component/LoginPage/Login";
 import SignupForm from "./component/LoginPage/SignupForm";
+import SearchForm from "./component/LoginPage/SearchForm";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/MacVigation" element={<Map5 />} />
           <Route exact path="/serviceInfo" element={<ServiceInfo />} />
           <Route exact path="/Login" element={<Login />} />
+          <Route exact path="/SearchForm" element={<SearchForm />} />
           <Route exact path="/SignupForm" element={<SignupForm />} />
         </Routes>
       </Router>
