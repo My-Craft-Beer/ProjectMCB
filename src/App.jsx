@@ -8,7 +8,7 @@ import Home from './component/Home/Home';
 import Map5 from './component/Map/Map5';
 import ModalContainer from './component/ModalMenu/Modalcontainer';
 import ServiceInfo from './component/ServiceInfo/ServiceInfo';
-import MbtiApp from "./components/mbti/mbtiApp";
+import Mbti from './component/mbti/Mbti'
 
 function App() {
 
@@ -20,8 +20,8 @@ function App() {
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/MacVigation" element={<Map5/>} />
           <Route exact path="/serviceInfo" element={<ServiceInfo/>} />
+          <Route exact path="/mbti" element={<Mbti/>} />
         </Routes>
-        <MbtiApp />
       </Router>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 // 라이브러리
 import styled from 'styled-components'
-import { Link } from "react-router-dom";
+
 // 함수
 import { useState } from 'react';
 // CSS

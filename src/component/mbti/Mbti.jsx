@@ -1,8 +1,8 @@
 import React from 'react';
 import './Start.module.css'
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Start(props) {
+function Mbti(props) {
   return (
     <div>
       <Link to="/survey1"><div className='backgruound'></div>
@@ -11,4 +11,4 @@ function Start(props) {
   );
 }
 
-export default Start
+export default Mbti

@@ -1,7 +1,8 @@
 .backgruound {
   width: 390px;
   height: 844px;
-  background-image: url(../mbti/Start.jsx);
+  background-image: url(../../../public/img/kooImg/맥bti-start.svg);
+
   margin: 0 auto;
   cursor: pointer;
 }

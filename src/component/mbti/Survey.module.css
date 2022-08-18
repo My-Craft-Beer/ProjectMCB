@@ -20,27 +20,27 @@ html {
 }
 
 .backgruound-survey1 {
-  background-image: url(../mbti/Survey1.jsx);
+  background-image: url(../../../public/img/kooImg/survey1.svg);
 }
 
 .backgruound-survey2 {
-  background-image: url(../../../public/kooImg/acid.svg);
+  background-image: url(../../../public/img/kooImg/acid.svg);
 }
 
 .backgruound-survey3 {
-  background-image: url(../../../public/kooImg/taste.svg);
+  background-image: url(../../../public/img/kooImg/taste.svg);
 }
 
 .backgruound-survey4 {
-  background-image: url(../../../public/kooImg/color.svg);
+  background-image: url(../../../public/img/kooImg/color.svg);
 }
 
 .backgruound-survey5 {
-  background-image: url(../../../public/kooImg/whatisbeer.svg);
+  background-image: url(../../../public/img/kooImg/whatisbeer.svg);
 }
 
 .backgruound-survey6 {
-  background-image: url(../../../public/kooImg/snack.svg);
+  background-image: url(../../../public/img/kooImg/snack.svg);
 }
 
 .backgruound-survey-name {
