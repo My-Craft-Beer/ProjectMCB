@@ -32,17 +32,19 @@ function App() {
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/MacVigation" element={<Map5/>} />
           <Route exact path="/serviceInfo" element={<ServiceInfo/>} />
-          <Route path="/mbti" element={<Mbti />}></Route>
-          <Route path="/survey1" element={<Survey1 />}></Route>
-          <Route path="/survey2" element={<Survey2 />}></Route>
-          <Route path="/survey3" element={<Survey3 />}></Route>
-          <Route path="/survey4" element={<Survey4 />}></Route>
-          <Route path="/survey5" element={<Survey5 />}></Route>
-          <Route path="/survey6" element={<Survey6 />}></Route>
-          <Route path="/resulthop" element={<ResultHop />}></Route>
-          <Route path="/resultblack" element={<ResultBlack />}></Route>
-          <Route path="/resultmalt" element={<ResultMalt />}></Route>
-          <Route path="/resultbacteria" element={<ResultBacteria />}></Route>
+
+          {/* mbti */}
+          <Route path="/mbti" element={<Mbti />}/>
+          <Route path="/survey1" element={<Survey1 />}/>
+          <Route path="/survey2" element={<Survey2 />}/>
+          <Route path="/survey3" element={<Survey3 />}/>
+          <Route path="/survey4" element={<Survey4 />}/>
+          <Route path="/survey5" element={<Survey5 />}/>
+          <Route path="/survey6" element={<Survey6 />}/>
+          <Route path="/resulthop" element={<ResultHop />}/>
+          <Route path="/resultblack" element={<ResultBlack />}/>
+          <Route path="/resultmalt" element={<ResultMalt />}/>
+          <Route path="/resultbacteria" element={<ResultBacteria />}/>
         </Routes>
       </Router>
     </div>
