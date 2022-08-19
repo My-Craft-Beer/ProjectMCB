@@ -23,9 +23,6 @@ import ResultBlack from "./component/mbti/resultBlack";
 import ResultMalt from "./component/mbti/resultMalt";
 import ResultBacteria from "./component/mbti/resultBacteria";
 
-import Map5 from "./component/Map/Map5";
-import ModalContainer from "./component/ModalMenu/Modalcontainer";
-import ServiceInfo from "./component/ServiceInfo/ServiceInfo";
 import Login from "./component/LoginPage/Login";
 import SignupForm from "./component/LoginPage/SignupForm";
 import SearchForm from "./component/LoginPage/SearchForm";
