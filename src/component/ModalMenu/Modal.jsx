@@ -1,20 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './Modal.scss'
-import CloseIcon from '@mui/icons-material/Close';
-import HomeIcon from '@mui/icons-material/Home';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Modal.scss";
+import CloseIcon from "@mui/icons-material/Close";
+import HomeIcon from "@mui/icons-material/Home";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 
-const Modal = ({modalClose}) => {
-
-    const onCloseModal = (e) => {
-        console.log('e.target: ', e.target)
-        console.log('e.tarcurrentTargetget: ', e.currentTarget)
-        if(e.target === e.currentTarget){
-            modalClose()
-        }
-
+const Modal = ({ modalClose }) => {
+  const onCloseModal = (e) => {
+    console.log("e.target: ", e.target);
+    console.log("e.tarcurrentTargetget: ", e.currentTarget);
+    if (e.target === e.currentTarget) {
+      modalClose();
     }
+};
     return (
         <div className="modal__container" onClick={onCloseModal}>
             <div className="modal">
@@ -62,10 +60,10 @@ const Modal = ({modalClose}) => {
                     </div>
                     <div className='serviceInfo'><Link to="/serviceInfo">서비스 안내</Link></div>
                 </div>
-                <CloseIcon fontSize='large' className="modal__button" onClick={modalClose} />
-            </div>
-        </div>
-    )
-}
+            <CloseIcon fontSize='large' className="modal__button" onClick={modalClose} />
+      </div>
+    </div>
+  );
+};
 
-export default Modal
+export default Modal;
