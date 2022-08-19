@@ -1,7 +1,35 @@
 import React, {useState, useEffect} from "react";
 import './Login.css';
+// 로그인 관련 함수
+import {
+  createUserWithEmailAndPassword,
+  getRedirectResult,
+  signInWithEmailAndPassword,
+  signInWithRedirect,
+  signOut,
+} from "firebase/auth";
+// import { createUserWithEmailAndPassword } from "firebase/auth";
+import { authService } from "../../firebase";
+import { Link } from "react-router-dom";
+
+//앞서 생성한 config파일과 Firebase/auth로 부터 함수들을 import
 
 const SignupForm = () => {
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+
+  const register = async () => {
+    try {
+      const user = await createUserWithEmailAndPassword(
+          authService,
+          registerEmail,
+          registerPassword
+      );
+      console.log(user);
+    } catch (error) {
+        console.log(error.message);
+    }
+  };
 
 
   return (
@@ -15,7 +43,9 @@ const SignupForm = () => {
             type="email"
             name="email"
             id="email"
-            onChange={() => console.log("아이디 입력")}
+            placeholder="Email"
+            onChange={(e) => { setRegisterEmail(e.target.value);
+            }}
           />
         </div>
         <div className="form-group">
@@ -24,10 +54,13 @@ const SignupForm = () => {
             type="password"
             name="password"
             id="password"
-            onChange={() => console.log("비밀번호 입력")}
+            placeholder="Password"
+            onChange={(e) => {
+              setRegisterPassword(e.target.value);
+            }}
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label className="signupForm-label" htmlFor="password">비밀번호 확인: </label>
           <input className="signupForm-input"
             type="password"
@@ -62,9 +95,14 @@ const SignupForm = () => {
             id="tel"
             onChange={() => console.log("휴대전화 입력")}
           />
-        </div>
+        </div> */}
         <div className="form-group">
-          <input className="button" type="submit" value="확인" name="search_id_submit" />
+          {/* <input className="button" type="submit" value="확인" name="search_id_submit" /> */}
+          <button className="button" onClick={register}>
+            <Link to = "/Login">
+              확인
+            </Link>
+            </button>
         </div>
       </div>
     </div>

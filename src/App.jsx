@@ -23,7 +23,7 @@ import ResultBlack from "./component/mbti/resultBlack";
 import ResultMalt from "./component/mbti/resultMalt";
 import ResultBacteria from "./component/mbti/resultBacteria";
 
-import Login from "./component/LoginPage/Login";
+import Login from "./component/LoginPage/LoginForm";
 import SignupForm from "./component/LoginPage/SignupForm";
 import SearchForm from "./component/LoginPage/SearchForm";
 import Mypage from './component/LoginPage/Mypage';
