@@ -106,10 +106,10 @@ function Home() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <StyledTableCell width="30px" align="center">
+              <StyledTableCell width="57px" align="center">
                 순번
               </StyledTableCell>
-              <StyledTableCell width="30px" align="center">지역</StyledTableCell>
+              <StyledTableCell width="57px" align="center">지역</StyledTableCell>
               <StyledTableCell align="center">제목</StyledTableCell>
               <StyledTableCell align="center">날짜</StyledTableCell>
             </TableRow>
