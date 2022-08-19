@@ -43,7 +43,6 @@ function Survey1({addHop}) {
     navigate('/survey2')
   }
 
-  // let state = useSelector((state) => state)
   let dispatch = useDispatch()
 
 

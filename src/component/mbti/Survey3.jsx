@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 // 함수
 import { useState } from 'react';
-import {   hopPlus, blackPlus, bacteriaPlus, maltLover, } from "../../store";
+import {   hopPlus3, blackPlus3, bacteriaPlus3, maltLover, } from "../../store";
 // CSS
 import './Survey.module.css';
 
@@ -56,11 +56,11 @@ function Survey3(props) {
         <button className='btn-survey1-each' onClick={()=>{add_count() 
         }}>상큼하고 달달한 맛</button>
         <button className='btn-survey1-each' onClick={()=>{add_count() 
-        dispatch(hopPlus())
-        dispatch(bacteriaPlus())}}  >강렬한 맛</button>
+        dispatch(hopPlus3())
+        dispatch(bacteriaPlus3())}}  >강렬한 맛</button>
         <button className='btn-survey1-each' onClick={()=>{add_count() 
         dispatch(maltLover())
-        dispatch(blackPlus())}}>곡물의 고소한 맛</button>
+        dispatch(blackPlus3())}}>곡물의 고소한 맛</button>
       </div>
     </div>
   );

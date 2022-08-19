@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 // 함수
 import { useState } from 'react';
-import {   hopPlus, maltPlus, bacteriaPlus, blackLover, } from "../../store";
+import {   hopPlus2, maltPlus2, bacteriaPlus2, blackLover, } from "../../store";
 // CSS
 import './Survey.module.css';
 
@@ -57,10 +57,10 @@ function Survey2(props) {
       <h2 className='backgruound-survey-name'>선호하는 탄산의 정도는?</h2>
       <div className='btn-survey-column'>
         <button className='btn-survey1-each' onClick={()=>{add_count()
-        dispatch(maltPlus())
-        dispatch(hopPlus())}}>강한 탄산</button>
+        dispatch(maltPlus2())
+        dispatch(hopPlus2())}}>강한 탄산</button>
         <button className='btn-survey1-each' onClick={()=>{add_count()
-        dispatch(bacteriaPlus())}}  >부드러운 탄산</button>
+        dispatch(bacteriaPlus2())}}  >부드러운 탄산</button>
         <button className='btn-survey1-each' onClick={()=>{add_count()
         dispatch(blackLover())}}>탄산 따위는 필요 없다</button>
       </div>
