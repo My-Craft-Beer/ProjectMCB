@@ -9,11 +9,17 @@ const result = createSlice({
     hopPlus(state) {
       state.hop += 1;
     },
+    hopPlus2(state) {
+      state.hop += 2;
+    },
     hopLover(state) {
       state.hop += 4;
     },
     blackPlus(state) {
       state.black += 1;
+    },
+    blackPlus2(state) {
+      state.black += 2;
     },
     blackLover(state) {
       state.black += 5;
@@ -21,11 +27,17 @@ const result = createSlice({
     maltPlus(state) {
       state.malt += 1;
     },
+    maltPlus2(state) {
+      state.malt += 2;
+    },
     maltLover(state) {
       state.malt += 3;
     },
     bacteriaPlus(state) {
       state.bacteria += 1;
+    },
+    bacteriaPlus2(state) {
+      state.bacteria += 2;
     },
     bacteriaLover(state) {
       state.bacteria += 3;
@@ -45,6 +57,10 @@ export let {
   blackPlus,
   maltPlus,
   bacteriaPlus,
+  hopPlus2,
+  blackPlus2,
+  maltPlus2,
+  bacteriaPlus2,
   hopLover,
   blackLover,
   maltLover,
