@@ -8,17 +8,22 @@ import Home from './component/Home/Home';
 import Map5 from './component/Map/Map5';
 import ModalContainer from './component/ModalMenu/Modalcontainer';
 import ServiceInfo from './component/ServiceInfo/ServiceInfo';
+import PlusPage from './component/Map/PlusPage';
+
 
 function App() {
 
   return (
     <div className="App">
+      
       <Router>
         <ModalContainer/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/MacVigation" element={<Map5/>} />
           <Route exact path="/serviceInfo" element={<ServiceInfo/>} />
+          <Route exact path="/PlusPage" element={<PlusPage/>} />
+
         </Routes>
       </Router>
     </div>

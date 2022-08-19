@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.InfoWindow {
+  background-color: #f9e8b7;
+  width: 150px;
+  height: 30px;
+}
+
+.Plus_Button_container {
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+
+  .Plus_Button {
+    position: absolute;
+    color: black;
+
+    // .add_btn{
+    //   font-size:200%;
+    // }
+  }
+}
