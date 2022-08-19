@@ -2,9 +2,11 @@ import React from 'react';
 
 // 라이브러리
 import styled from 'styled-components'
-
+import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 // 함수
 import { useState } from 'react';
+import { hopPlus, blackPlus, maltPlus, bacteriaPlus } from "../../store";
 // CSS
 import './Survey.module.css';
 
@@ -29,6 +31,7 @@ const Progress = styled.div`
 
 function Survey6(props) {
   const [count, setCount] = useState(5);
+  const navigate = useNavigate();
 
   function add_count(){
     if (count === 6){
@@ -39,6 +42,23 @@ function Survey6(props) {
     }
   }
 
+  let dispatch = useDispatch()
+  const page = useSelector((state) => state.result)
+  const result = () => {
+    if (page.hop > page.black && page.hop > page.malt && page.hop > page.bacteria) {
+      navigate('/resulthop')
+    }
+    if (page.black > page.hop && page.black > page.malt && page.black > page.bacteria) {
+      navigate('/resultblack')
+    }
+    if (page.malt > page.black && page.malt > page.hop && page.malt > page.bacteria) {
+      navigate('/resultmalt')
+    }
+    if (page.bacteria > page.black && page.bacteria >  page.malt && page.bacteria >  page.hop) {
+      navigate('/resultbacteria')
+    }
+    console.log(page);
+  }
 
   return (
     <div className='backgruound-survey6'>
@@ -48,9 +68,17 @@ function Survey6(props) {
       </Container>
       <h2 className='backgruound-survey-name'>맥주를 먹을 때</h2>
       <div className='btn-survey-column'>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}>안주는 거추장스러울 뿐</button>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}  >안주 없이 어떻게 맥주를?</button>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}>관심 없어</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        dispatch(blackPlus())
+        dispatch(bacteriaPlus())
+        result()}}>안주는 거추장스러울 뿐</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        dispatch(maltPlus())
+        dispatch(hopPlus())
+        result()}}  >안주 없이 어떻게 맥주를?</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        result()
+        }}>관심 없어</button>
       </div>
     </div>
   );

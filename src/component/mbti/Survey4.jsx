@@ -3,8 +3,10 @@ import React from 'react';
 // 라이브러리
 import styled from 'styled-components'
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 // 함수
 import { useState } from 'react';
+import { hopPlus, blackPlus, maltPlus, bacteriaPlus } from "../../store";
 // CSS
 import './Survey.module.css';
 
@@ -41,6 +43,7 @@ function Survey4(props) {
     navigate('/survey5')
   }
 
+  let dispatch = useDispatch()
 
   return (
     <div className='backgruound-survey4'>
@@ -50,10 +53,15 @@ function Survey4(props) {
       </Container>
       <h2 className='backgruound-survey-name'>선호하는 맥주 색은</h2>
       <div className='btn-survey1'>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}>선명한 황금빛</button>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}  >불투명한 오렌지주스 색</button>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}>짙은 갈색</button>
-        <button className='btn-survey1-each' onClick={()=>{add_count()}}>검은색</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        }}>선명한 황금빛</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        dispatch(hopPlus())}}  >불투명한 오렌지주스 색</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        dispatch(maltPlus())
+        dispatch(bacteriaPlus())}}>짙은 갈색</button>
+        <button className='btn-survey1-each' onClick={()=>{add_count()
+        dispatch(blackPlus())}}>검은색</button>
       </div>
     </div>
   );
