@@ -1,10 +1,18 @@
 import React from 'react';
 import './Result.module.css';
-
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { restart } from "../../store";
 
 
 
 const ResultMalt = () => {
+
+  const navigate = useNavigate();
+  let dispatch = useDispatch()
+  const goHome = () => {
+    navigate('/MaBTI')
+  }
 
   return (
     <div>
@@ -13,9 +21,6 @@ const ResultMalt = () => {
         <img src={require('./kooImg/malt/wheat-sack 1.png')} alt="" />
         <h1>고소미</h1>
         <div className='text-box-black'>
-          <p>저희 할아버지는 고소한 걸 드실 때면</p>
-          <p>항상 '꼬신게 최고여~' 라고 하셨더랬죠</p>
-          <br />
           <p>곡물에서 나는 고소한 맛과</p> 
           <p>향을 즐기는 당신</p>
           <br />
@@ -50,6 +55,8 @@ const ResultMalt = () => {
             alt="퍼센트펍"
           />
         </div>
+        <button className='restart' onClick={() => {goHome()
+        dispatch(restart())}}>다시 하기</button>
       </div>
     </div>
   );

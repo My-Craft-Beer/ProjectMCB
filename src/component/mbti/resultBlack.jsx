@@ -1,10 +1,18 @@
 import React from 'react';
 import './Result.module.css';
-
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { restart } from "../../store";
 
 
 
 const ResultBlack = () => {
+
+  const navigate = useNavigate();
+  let dispatch = useDispatch()
+  const goHome = () => {
+    navigate('/MaBTI')
+  }
 
   return (
     <div>
@@ -13,8 +21,6 @@ const ResultBlack = () => {
         <img src={require('./kooImg/black/master 1.png')} alt="" />
         <h1>고인물</h1>
         <div className='text-box-black'>
-          <p>당신이 왜 여기에 있을까요?</p>
-          <br />
           <p>맥덕의 재능을 가진 당신</p>
           <p>초콜렛과 커피 향을 즐기며</p>
           <p>맥주가 흐르는 빵이라 외치는 당신에게</p>
@@ -50,6 +56,8 @@ const ResultBlack = () => {
             alt="서울 브루어리"
           />
         </div>
+        <button className='restart' onClick={() => {goHome()
+        dispatch(restart())}}>다시 하기</button>
       </div>
     </div>
   );

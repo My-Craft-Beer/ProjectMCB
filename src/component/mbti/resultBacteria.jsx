@@ -1,10 +1,18 @@
 import React from 'react';
 import './Result.module.css';
-
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { restart } from "../../store";
 
 
 
 const ResultMalt = () => {
+
+  const navigate = useNavigate();
+  let dispatch = useDispatch()
+  const goHome = () => {
+    navigate('/MaBTI')
+  }
 
   return (
     <div>
@@ -13,14 +21,12 @@ const ResultMalt = () => {
         <img src={require('./kooImg/bacteria/yeast 1.png')} alt="" />
         <h1>효모러버</h1>
         <div className='text-box-black'>
-          <p>효모에서 나는 복잡미묘한 향을</p>
-          <p>사랑하시는 군요</p>
-          <br />
           <p>때로는 열대과일과 같은 상큼한 향이,</p>
           <p>때로는 바나나와 같은 달큰한 향이</p>
           <p>나는 효모 기반의 맥주들</p>
           <br />
-          <p>당신은 진정으로 맥주를 사랑하는군요</p>
+          <p>당신은 진정으로</p>
+          <p>맥주를 사랑하는군요</p>
 
         </div>
 
@@ -51,6 +57,8 @@ const ResultMalt = () => {
             alt="바이젠하우스"
           />
         </div>
+        <button className='restart' onClick={() => {goHome()
+        dispatch(restart())}}>다시 하기</button>
       </div>
     </div>
   );

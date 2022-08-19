@@ -54,7 +54,7 @@ h1 {
   margin-top: 10px;
   border-radius: 10px;
   width: 292px;
-  height: 250px;
+  height: 175px;
   background-color: #ffe085;
   font-family: "Cutive Mono";
   font-style: normal;
@@ -86,4 +86,18 @@ h1 {
 h3 {
   margin: 16px 0px;
   font-size: 17px;
+}
+
+.restart {
+  width: 40%;
+  height: 6vh;
+  border: 0px solid white;
+  border-radius: 10px;
+  margin-top: 26px;
+  background-color: #ffe085;
+  font-family: "Cutive Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 12px;
 }

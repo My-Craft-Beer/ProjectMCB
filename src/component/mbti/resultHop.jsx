@@ -1,11 +1,21 @@
 import React from 'react';
 
 import './Result.module.css';
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { restart } from "../../store";
 
 
 
 
 const ResultHop = () => {
+  
+  const navigate = useNavigate();
+  let dispatch = useDispatch()
+  const goHome = () => {
+    navigate('/MaBTI')
+  }
+
 
   return (
     <div>
@@ -49,6 +59,8 @@ const ResultHop = () => {
             alt="크래프트브로스"
           />
         </div>
+      <button className='restart' onClick={() => {goHome()
+        dispatch(restart())}}>다시 하기</button>
       </div>
     </div>
   );

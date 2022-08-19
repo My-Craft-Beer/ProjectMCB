@@ -30,6 +30,13 @@ const result = createSlice({
     bacteriaLover(state) {
       state.bacteria += 3;
     },
+    restart(state) {
+      state.hop = 0;
+      state.black = 0;
+      state.malt = 0;
+      state.bacteria = 0;
+      console.log(state.hop, state.malt, state.bacteria, state.black);
+    },
   },
 });
 
@@ -42,6 +49,7 @@ export let {
   blackLover,
   maltLover,
   bacteriaLover,
+  restart,
 } = result.actions;
 
 export default configureStore({
