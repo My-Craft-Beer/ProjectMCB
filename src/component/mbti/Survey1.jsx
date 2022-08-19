@@ -3,7 +3,7 @@ import React from 'react';
 // 라이브러리
 import styled from 'styled-components'
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 // 함수
 import { useState} from 'react';
 import { hopPlus, blackPlus, maltPlus, bacteriaPlus } from "../../store";

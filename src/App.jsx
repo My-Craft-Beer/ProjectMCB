@@ -34,7 +34,7 @@ function App() {
           <Route exact path="/serviceInfo" element={<ServiceInfo/>} />
 
           {/* mbti */}
-          <Route path="/mbti" element={<Mbti />}/>
+          <Route path="/MaBTI" element={<Mbti />}/>
           <Route path="/survey1" element={<Survey1 />}/>
           <Route path="/survey2" element={<Survey2 />}/>
           <Route path="/survey3" element={<Survey3 />}/>

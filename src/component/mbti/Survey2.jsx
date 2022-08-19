@@ -3,10 +3,10 @@ import React from 'react';
 // 라이브러리
 import styled from 'styled-components'
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 // 함수
 import { useState } from 'react';
-import { hopPlus, blackPlus, maltPlus, bacteriaPlus } from "../../store";
+import {   hopPlus, maltPlus, bacteriaPlus, blackLover, } from "../../store";
 // CSS
 import './Survey.module.css';
 
@@ -62,7 +62,7 @@ function Survey2(props) {
         <button className='btn-survey1-each' onClick={()=>{add_count()
         dispatch(bacteriaPlus())}}  >부드러운 탄산</button>
         <button className='btn-survey1-each' onClick={()=>{add_count()
-        dispatch(blackPlus())}}>탄산 따위는 필요 없다</button>
+        dispatch(blackLover())}}>탄산 따위는 필요 없다</button>
       </div>
     </div>
   );

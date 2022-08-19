@@ -3,10 +3,10 @@ import React from 'react';
 // 라이브러리
 import styled from 'styled-components'
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 // 함수
 import { useState } from 'react';
-import { hopPlus, blackPlus, maltPlus, bacteriaPlus } from "../../store";
+import { blackPlus, maltPlus, bacteriaPlus, hopLover, } from "../../store";
 // CSS
 import './Survey.module.css';
 
@@ -56,7 +56,7 @@ function Survey4(props) {
         <button className='btn-survey1-each' onClick={()=>{add_count()
         }}>선명한 황금빛</button>
         <button className='btn-survey1-each' onClick={()=>{add_count()
-        dispatch(hopPlus())}}  >불투명한 오렌지주스 색</button>
+        dispatch(hopLover())}}  >불투명한 오렌지주스 색</button>
         <button className='btn-survey1-each' onClick={()=>{add_count()
         dispatch(maltPlus())
         dispatch(bacteriaPlus())}}>짙은 갈색</button>

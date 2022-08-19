@@ -1,3 +1,7 @@
+@import "./component/mbti/Start.module.css";
+@import "./component/mbti/Survey.module.css";
+@import "./component/mbti/Result.module.css";
+
 .App {
   text-align: center;
 }
@@ -33,7 +37,7 @@ a {
   color: #000;
 }
 a:visited {
-  color:#000;
+  color: #000;
 }
 
 .burger {
