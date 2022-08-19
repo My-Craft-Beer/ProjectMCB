@@ -22,7 +22,7 @@ const Modal = ({modalClose}) => {
                     <div className='profileContainer'>
                         <div className='profile'>
                             <img src="img/profileImg.svg" alt="profile" />
-                            <span><a href="/">Log In</a></span>
+                            <Link to="/Login">Log In</Link>
                         </div>
                     </div>
                     <div className='menuContainer'>
