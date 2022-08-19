@@ -52,7 +52,7 @@ const Modal = ({ modalClose }) => {
                             <Link to="/MaBTI"><img id="MacBTI" src="img/MacBTIIcon.png" alt="맥BTI" /></Link>
                         </div>
                         <div className='navMenu'>
-                            <Link to="/community">
+                            <Link to="/ComuMainHome">
                                 <img id="Community" src="img/CommunityIcon.png" alt="community" />
                                 <div>커뮤니티</div>
                             </Link>
