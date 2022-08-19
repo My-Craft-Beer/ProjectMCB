@@ -1,41 +1,16 @@
-import React, {useState, useEffect} from "react";
-import './Login.css';
+import React from 'react'
 
-const SignupForm = () => {
-
-
+function Mypage() {
   return (
+    <>
     <div className='All-form'>
       <div className="form-inner">
         <img src="img/HomeLogo.png" className='HomelogoImg' />
 
-        <div className="form-group">
-          <label className="signupForm-label" htmlFor="email">아이디: </label>
-          <input className="signupForm-input"
-            type="email"
-            name="email"
-            id="email"
-            onChange={() => console.log("아이디 입력")}
-          />
-        </div>
-        <div className="form-group">
-          <label className="signupForm-label" htmlFor="password">비밀번호: </label>
-          <input className="signupForm-input"
-            type="password"
-            name="password"
-            id="password"
-            onChange={() => console.log("비밀번호 입력")}
-          />
-        </div>
-        <div className="form-group">
-          <label className="signupForm-label" htmlFor="password">비밀번호 확인: </label>
-          <input className="signupForm-input"
-            type="password"
-            name="password"
-            id="password"
-            onChange={() => console.log("비밀번호 확인")}
-          />
-        </div>
+        <h2>회원정보</h2>
+
+        <img src={ require('./img/account_circle.png') } />
+
         <div className="form-group">
           <label className="signupForm-label" htmlFor="name">이름: </label>
           <input className="signupForm-input"
@@ -43,6 +18,15 @@ const SignupForm = () => {
             name="name"
             id="name"
             onChange={() => console.log("이름 입력")}
+          />
+        </div>
+        <div className="form-group">
+          <label className="signupForm-label" htmlFor="name">이메일: </label>
+          <input className="signupForm-input"
+            type="email"
+            name="email"
+            id="email"
+            onChange={() => console.log("이메일")}
           />
         </div>
         <div className="form-group">
@@ -68,7 +52,8 @@ const SignupForm = () => {
         </div>
       </div>
     </div>
-  );
-};
+    </>
+  )
+}
 
-export default SignupForm;
+export default Mypage

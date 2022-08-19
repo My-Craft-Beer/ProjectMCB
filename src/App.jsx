@@ -26,6 +26,7 @@ import ResultBacteria from "./component/mbti/resultBacteria";
 import Login from "./component/LoginPage/Login";
 import SignupForm from "./component/LoginPage/SignupForm";
 import SearchForm from "./component/LoginPage/SearchForm";
+import Mypage from './component/LoginPage/Mypage';
 
 
 function App() {
@@ -54,10 +55,12 @@ function App() {
 
           <Route exact path="/" element={<Home />} />
           <Route exact path="/MacVigation" element={<Map5 />} />
-          <Route exact path="/serviceInfo" element={<ServiceInfo />} />
+          <Route exact path="/MacVigation" element={<Map5 />} />
           <Route exact path="/Login" element={<Login />} />
           <Route exact path="/SearchForm" element={<SearchForm />} />
           <Route exact path="/SignupForm" element={<SignupForm />} />
+          <Route exact path="/serviceInfo" element={<ServiceInfo />} />
+          <Route exact path="/mypage" element={<Mypage />} />
         </Routes>
       </Router>
     </div>
