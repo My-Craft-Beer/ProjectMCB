@@ -8,6 +8,7 @@ import Home from './component/Home/Home';
 import Map5 from './component/Map/Map5';
 import ModalContainer from './component/ModalMenu/Modalcontainer';
 import ServiceInfo from './component/ServiceInfo/ServiceInfo';
+// import LogIn from './component/LoginPage/Login';
 
 // Mbti
 import Mbti from "./component/mbti/Mbti";
