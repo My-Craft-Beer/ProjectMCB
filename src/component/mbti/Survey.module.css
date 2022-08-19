@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 .backgruound-survey1,
 .backgruound-survey2,
 .backgruound-survey3,
@@ -44,7 +40,7 @@ html {
 }
 
 .backgruound-survey-name {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 20%;
 }
@@ -72,7 +68,7 @@ html {
   border: 0px;
   border-radius: 10px;
   height: 9.6vh;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: all 300ms ease;
   cursor: pointer;
