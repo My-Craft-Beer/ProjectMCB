@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 import {
@@ -12,10 +12,12 @@ function LoginForm () {
     const [loginEmail, setLoginEmail] = useState(""); // 코드 추가
     const [loginPassword, setLoginPassword] = useState(""); // 코드 추가
     const [user, setUser] = useState({}); // 코드 추가
+    const [loginAuth, setLoginAuth] = useState(false);
   
     onAuthStateChanged(authService, (currentUser) => {
         setUser(currentUser);
     });
+
   
     //로그인
     const login = async () => {
@@ -84,7 +86,7 @@ function LoginForm () {
                 <div className="sub-sign-in">
                     <Link to="/SignupForm">회원가입</Link>
                 </div>
-                <button onClick={login}><Link to="/">LogIn</Link></button>
+                <button className='loginbtn' onClick={login}><Link to="/">LogIn</Link></button>
                 {/* <div>User Logged In:</div>
                 <div>{user?.email}</div>
                 <button onClick={logout}>로그아웃</button> */}

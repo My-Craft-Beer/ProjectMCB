@@ -3,10 +3,7 @@ import './Login.css';
 // 로그인 관련 함수
 import {
   createUserWithEmailAndPassword,
-  getRedirectResult,
-  signInWithEmailAndPassword,
-  signInWithRedirect,
-  signOut,
+
 } from "firebase/auth";
 // import { createUserWithEmailAndPassword } from "firebase/auth";
 import { authService } from "../../firebase";

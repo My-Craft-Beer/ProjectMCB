@@ -139,6 +139,17 @@
     box-sizing: 0px 0px 3px rgba(0, 0, 0, 0.2);
   }
 
+  .loginbtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 600;
+    width: 70px;
+    height: 30px;
+    background-color: #F9E8B7;
+    border-radius: 10px;
+  }
+
   /* .signupForm-button {
   display: block;
   margin-top: 15px;
