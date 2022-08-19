@@ -10,13 +10,13 @@ const result = createSlice({
       state.hop += 1;
     },
     hopLover(state) {
-      state.hop += 3;
+      state.hop += 4;
     },
     blackPlus(state) {
       state.black += 1;
     },
     blackLover(state) {
-      state.black += 3;
+      state.black += 5;
     },
     maltPlus(state) {
       state.malt += 1;
