@@ -1,0 +1,40 @@
+/* My Header */
+
+header {
+  width: 390px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d9d9d9;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  header > div {
+    display: flex;
+  }
+  
+  header .head_text {
+    width: 50%;
+    font-size: 17px;
+    justify-content: center;
+  }
+  
+  header .head_btn_left {
+    width: 100px;
+    justify-content: start;
+  }
+  
+  header .head_btn_right {
+    width: 100px;
+    justify-content: end;
+    margin-right: 12px;
+  }
+  
+  header button {
+    font-family: "Nanum Pen Script";
+    border: none;
+    background-color: #d9d9d9;
+    font-weight: bold;
+  }
+
