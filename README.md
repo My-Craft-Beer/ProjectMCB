@@ -18,3 +18,7 @@
  * Login & Mypage : 김서현
  * 맥Vigation : 김동현
  * 커뮤니티 : 이인우
+
+## 사용 언어  
+* React.js
+* SCSS, CSS
