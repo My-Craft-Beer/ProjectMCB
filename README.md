@@ -13,7 +13,7 @@
 
 
 ## Member  
- * Team Leader(PM), Firebase : 전종원
+ * Team Leader(PM),  Firebase : 전종원
  * Login & Mypage : 김서현
  * 맥BTI : 구본현
  * 맥Vigation : 김동현
